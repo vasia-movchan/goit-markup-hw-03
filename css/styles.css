@@ -258,12 +258,10 @@ ul {
 
 .address {
    margin-top: 20px;
-   line-height: calc(24 / 14);
 }
 
-.address-list-item {
-   line-height: calc(24 / 14);
-}
+/* .address-list-item {
+} */
 
 .address-list-item:not(:last-child) {
    margin-bottom: 5px;
@@ -272,7 +270,9 @@ ul {
 .footer {
    background-color: var(--hero-bg-color);
 }
+
 .footer-link {
+   /* display: block; */
    font-style: normal;
    line-height: calc(24 / 14);
    color: var(--btn-text-first-color);
