@@ -59,7 +59,7 @@ ul {
    padding-left: 15px;
    padding-right: 15px;
    margin: 0 auto;
-   /* outline: 2px solid red; */
+   outline: 2px solid red;
 }
 
 /* ---------------LOGO-------------- */
@@ -186,6 +186,10 @@ ul {
 }
 
 /* ---------------ADVANTAGES------------- */
+
+.advantage-container {
+   padding-top: 94px;
+}
 .advantage-title {
    position: absolute;
    white-space: nowrap;
@@ -212,6 +216,11 @@ ul {
 
 /* -------------OUR WORK------------- */
 
+.work-container {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
 .work-title {
    font-weight: 700;
    font-size: 36px;
@@ -220,6 +229,11 @@ ul {
 }
 
 /* ---------------OUR TEAM----------- */
+.team-container {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
 .team-title {
    font-weight: 700;
    font-size: 36px;
@@ -237,6 +251,24 @@ ul {
 }
 
 /* ------------   FOOTER------------- */
+.footer-container {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.address {
+   margin-top: 20px;
+   line-height: calc(24 / 14);
+}
+
+.address-list-item {
+   line-height: calc(24 / 14);
+}
+
+.address-list-item:not(:last-child) {
+   margin-bottom: 5px;
+}
+
 .footer {
    background-color: var(--hero-bg-color);
 }
