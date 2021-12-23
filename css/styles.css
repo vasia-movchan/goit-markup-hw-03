@@ -12,6 +12,7 @@
    --logo2-color-footer: #ffffff;
    --color-transparency: rgba(255, 255, 255, 0.6);
    --hero-bg-color: #2f303a;
+   --header-border-color: #ececec;
 }
 
 body {
@@ -31,8 +32,39 @@ body {
 .list {
    list-style: none;
 }
+
+/*------------- Делает картинки блочными элементами------------ */
+img {
+   display: block;
+}
+
+/* ----Сбрасывает отступы у заголовков, абзацев и списков---- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+/* ------------Контейнер ----------------*/
+.container {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+   /* outline: 2px solid red; */
+}
+
 /* ---------------LOGO-------------- */
 .logo {
+   margin-right: 93px;
    font-family: Raleway;
    font-weight: 700;
    font-size: 26px;
@@ -50,11 +82,35 @@ body {
 }
 
 /* ------------------NAVIGATION------------------- */
+.header-container {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid var(--header-border-color);
+}
+
+.nav-list {
+   display: flex;
+}
+
+.header-contact {
+   display: flex;
+   margin-left: auto;
+}
+.header-contact-item:last-child {
+   margin-left: 50px;
+}
+
 .nav-link {
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 31px;
    font-weight: 500;
    line-height: calc(16 / 14);
    letter-spacing: 0.02em;
    color: var(--title-text-color);
+}
+.nav-list-item:not(:last-child) {
+   margin-right: 50px;
 }
 
 .nav-link:hover,
@@ -68,6 +124,9 @@ body {
 
 .nav-link-mail,
 .nav-link-tel {
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 31px;
    font-family: 'Roboto', sans-serif;
    font-weight: 500;
    font-size: 14px;
@@ -81,19 +140,31 @@ body {
 }
 
 /* -------------------HERO------------------ */
+.hero-container {
+   padding-top: 200px;
+   padding-bottom: 200px;
+   padding-left: 252px;
+   padding-right: 252px;
+}
+
+.hero {
+   background-color: var(--hero-bg-color);
+}
 
 .hero-title {
+   margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
    line-height: calc(60 / 44);
    text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   color: var(--btn-text-first-color);
-   background-color: var(--hero-bg-color);
+   color: var(--bg-color);
 }
 
 .hero-btn {
+   display: block;
+   margin: 0 auto;
    cursor: pointer;
    width: 200px;
    height: 50px;
