@@ -14,6 +14,7 @@
    --hero-bg-color: #2f303a;
    --header-border-color: #ececec;
    --team-bg-color: #f5f4fa;
+   --number-of-cards: 3;
 }
 
 body {
@@ -60,6 +61,7 @@ ul {
    padding-left: 15px;
    padding-right: 15px;
    margin: 0 auto;
+   /* outline: 1px solid black; */
 }
 
 /* ---------------LOGO-------------- */
@@ -279,13 +281,15 @@ ul {
    width: 270px;
 }
 
-.team-list-img {
-   margin-bottom: 30px;
-}
-
 .team-list-item:not(:last-child) {
    margin-right: 30px;
 }
+
+.team-card-title {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
 .team-item-title {
    text-align: center;
    margin-bottom: 10px;
@@ -296,7 +300,6 @@ ul {
 }
 .team-item-text {
    text-align: center;
-   margin-bottom: 30px;
    font-size: 16px;
    line-height: calc(19 / 16);
 }
@@ -339,11 +342,41 @@ ul {
 
 /* -----------------PORTFOLIO--------------------- */
 
+.portfolio-container {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.portfolio-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
+}
+
+.portfolio-list > .portfolio-list-item {
+   flex-basis: calc(100% / var(--number-of-cards) - 30px);
+   margin-top: 30px;
+   margin-left: 30px;
+}
 /* ----------FILTER BUTTON---------- */
+
+.button-list {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.button-list-item:not(:last-child) {
+   margin-right: 8px;
+}
+
 .filter-btn {
+   padding-top: 6px;
+   padding-right: 22px;
+   padding-bottom: 6px;
+   padding-left: 22px;
    cursor: pointer;
-   width: 145px;
-   height: 38px;
    border-radius: 4px;
    background-color: var(--btn-filter-color);
    border: none;
@@ -382,7 +415,15 @@ ul {
 
 /* ---------------PORTFOLIO ITEMS----------------- */
 
-/* .portfolio-item{} */
+.card-title {
+   padding-top: 20px;
+   padding-left: 24px;
+   padding-right: 24px;
+   padding-bottom: 20px;
+   border: 1px solid #eeeeee;
+   border-top-color: transparent;
+}
+
 .portfolio-item-title {
    font-weight: 700;
    font-size: 18px;
@@ -392,6 +433,7 @@ ul {
 }
 
 .portfolio-item-text {
+   margin-top: 4px;
    font-size: 16px;
    line-height: calc(30 / 16);
    color: var(--content-text-color);
