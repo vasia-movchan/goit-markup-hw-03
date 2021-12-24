@@ -190,6 +190,19 @@ ul {
 .advantage-container {
    padding-top: 94px;
 }
+
+.advantage-list {
+   display: flex;
+}
+
+.advantage-item {
+   width: 270px;
+}
+
+.advantage-item:not(:last-child) {
+   margin-right: 30px;
+}
+
 .advantage-title {
    position: absolute;
    white-space: nowrap;
@@ -204,6 +217,7 @@ ul {
 }
 
 .advantage-item-title {
+   margin-bottom: 10px;
    font-weight: 700;
    line-height: calc(16 / 14);
    text-transform: uppercase;
@@ -264,7 +278,7 @@ ul {
 } */
 
 .address-list-item:not(:last-child) {
-   margin-bottom: 5px;
+   margin-bottom: 6px;
 }
 
 .footer {
@@ -272,7 +286,6 @@ ul {
 }
 
 .footer-link {
-   /* display: block; */
    font-style: normal;
    line-height: calc(24 / 14);
    color: var(--btn-text-first-color);
